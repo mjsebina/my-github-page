@@ -1,1 +1,184 @@
+/* ==========================
+   Global Styles
+========================== */
+
+:root {
+  --primary-color: #ff5722; /* MJ Burger's signature orange */
+  --secondary-color: #4caf50; /* Fresh green for accents */
+  --bg-color: #f4f4f4; /* Light background */
+  --text-color: #333; /* Dark text for readability */
+  --font-family: 'Arial', sans-serif;
+  --border-radius: 8px;
+  --max-width: 1200px;
+  --padding: 20px;
+  --transition: 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==========================
+   Header & Navigation
+========================== */
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Main Content Area
+========================== */
+
+main {
+  padding: var(--padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ==========================
+   Home Section
+========================== */
+
+.home-section {
+  text-align: center;
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home-section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition);
+}
+
+.home-section img:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================
+   About Section
+========================== */
+
+.about-section {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ==========================
+   Contact Section
+========================== */
+
+.contact-section {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section label {
+  font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea,
+.contact-section select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.contact-section button {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color var(--transition);
+}
+
+.contact-section button:hover {
+  background-color: #388e3c;
+}
+
+/* ==========================
+   Order Section
+========================== */
+
+.order-section {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: var(--bo
 
