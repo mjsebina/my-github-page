@@ -1,51 +1,46 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MJ BURGER N FRIES</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
 
-<header>
+  <header>
+    <h1>MJ BURGER N FRIES</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<h1>Contact Me</h1>
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.</p>
 
-<nav>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-<a href="index.html">Home</a> |
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-<a href="about.html">About</a> |
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
 
-<a href="contact.html">Contact</a>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-</nav>
-
-</header>
-
-
-<main>
-
-<p>If you'd like to get in touch, feel free to email me at <a href="mailto:example@example.com">example@example.com</a>.</p>
-
-</main>
-
-
-<footer>
-
-<p>&copy; 2025 Your Name</p>
-
-</footer>
+  <footer>
+    <p>&copy; 2025 MJ BURGER N FRIES. All rights reserved.</p>
+  </footer>
 
 </body>
-
 </html>
+
