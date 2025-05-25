@@ -1,1 +1,66 @@
-hjfthj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - MJ BURGER N FRIES</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>MJ BURGER N FRIES</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <h2>Place Your Order</h2>
+      <form action="submit_order.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+        <label for="burger">Choose Your Burger:</label>
+        <select id="burger" name="burger" required>
+          <option value="classic">Classic Cheeseburger</option>
+          <option value="bacon">Bacon Cheeseburger</option>
+          <option value="veggie">Veggie Burger</option>
+        </select>
+
+        <label for="fries">Choose Your Fries:</label>
+        <select id="fries" name="fries" required>
+          <option value="regular">Regular Fries</option>
+          <option value="curly">Curly Fries</option>
+          <option value="sweet">Sweet Potato Fries</option>
+        </select>
+
+        <label for="drink">Add a Drink:</label>
+        <select id="drink" name="drink">
+          <option value="none">None</option>
+          <option value="soda">Soda</option>
+          <option value="water">Water</option>
+          <option value="juice">Juice</option>
+        </select>
+
+        <label for="special">Special Requests:</label>
+        <textarea id="special" name="special" placeholder="Any special requests or dietary restrictions"></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MJ BURGER N FRIES. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
